@@ -1,7 +1,7 @@
 // import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
-import HomePage from './Pages/HomePage';
+import MainPage from './Pages/MainPage';
 import LoginPage from './Pages/LoginPage';
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
         // hidden={hidden}
       />
       {/* <LoginPage /> */}
-      <HomePage />
+      <MainPage />
     </View>
   );
 }

@@ -1,70 +1,43 @@
-import React, {useState} from 'react'
-import { StyleSheet, Text, View, Button, Image, TextInput, StatusBar } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 const HomePage = () => {
+
     return (
-        <View style={styles.outerView}>
-            <View style={styles.header}>
-                <View style={styles.logoView}>
-                    <Image
-                        style={styles.logo}
-                        source={require('../assets/pgimage.png')}
-                    />
-                </View>
-                <View style={styles.titleView}>
-                    <Text>Password</Text>
-                    <Text> &nbsp; &nbsp; &nbsp; &nbsp;Generator</Text>
-                </View>
-                <View style={styles.menuView}>
-                    <Text>Menu</Text>
-                </View>
+        <View>
+            <Text style={styles.welcomeTitle}>Welcome To Our App.</Text>
+            <Text>&nbsp; &nbsp; Get A Strong Password In Less Than 2 Minutes, By Providing Only Four Things You Want To Include In Your Password As Listed Below,</Text>
+            <View style={styles.infoList}>
+                <Text>1. First Word.</Text>
+                <Text>2. Second Word.</Text>
+                <Text>3. Numbers (Optional).</Text>
+                <Text>4. Special characters (Optional).</Text>
             </View>
-            <Text>This Is Home Page</Text>
+            <View style={styles.actionView}>
+                <Button
+                title="Get started" />
+            </View>
         </View>
     )
 }
 
-
 const styles = StyleSheet.create({
-    outerView: {
-        height: '100%',
-        width: '100%',
-        alignItems: 'center',
-        backgroundColor: '#F3F3F4'
+    welcomeTitle: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        // justifyContent: 'center',
+        // backgroundColor: 'red',
+        paddingBottom: '5%',
+        paddingLeft: '25%'
     },
-    header: {
-        height: 90,
-        width: '100%',
-        // backgroundColor: 'lightblue',
-        // display: 'flex',
-        flexDirection: 'row'
+    infoList: {
+        // backgroundColor: 'red',
+        paddingTop: '5%',
+        paddingLeft: '10%'
     },
-    logoView: {
-        width: '25%',
-        height: '100%',
-        backgroundColor: 'red',
-        alignItems: 'center',
-        justifyContent: 'center',
-        // alignSelf: 'auto'
-    },
-    logo: {
-        width: '80%',
-        height: '70%',
-        borderRadius: 45,
-    },
-    titleView: {
-        width: '60%',
-        height: '100%',
-        backgroundColor: 'green',
-        // alignItems: 'center',
-        justifyContent: 'center',
-        paddingLeft: 15
-    },
-    menuView: {
-        width: '15%',
-        height: '100%',
-        backgroundColor: 'blue'
-
+    actionView: {
+        // backgroundColor: 'red',
+        paddingTop: '15%'
     }
 })
-export default HomePage
+export default HomePage 

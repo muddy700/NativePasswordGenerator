@@ -6,7 +6,7 @@ const LoginPage = () => {
     const [password, setPassword] = useState('')
     const [loginError, setLoginError] = useState('')
 
-    const submitLogInInfo = () => {
+    const submitLogInInfo = () => { //Called When Login Form Is Submitted
         // console.log(email, password)
         if (!email) {
             setLoginError('Enter  your email.')
